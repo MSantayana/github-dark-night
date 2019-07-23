@@ -1,8 +1,23 @@
+/*
+
+Fiz cada um dos menus básicos.
+Falta perfl.
+Falta consertar os degradês.
+Falta decidir a paleta de cores realmente.
+Falta deixar os links azuis, como no Givero.
+
+*/
+
 body{
   background-color: rgb(39, 43, 65);
   color: rgb(226, 217, 254) !important;
 }
 
+.Header-link{
+  text-shadow: 1px 1px 20px #784fe9;
+}
+
+}
 a{
   color: #c98ffb;
   /* text-shadow: 1px 1px 20px #784fe9; */
@@ -103,7 +118,7 @@ border-bottom: #0e0d1b !important;
 
 .btn{
   color: rgb(226, 217, 254) !important;
-  background-image: linear-gradient(-180deg,#2c2a47,#1c1b28 90%);
+  background-image: linear-gradient(-180deg,#1e1d2d,#171521 90%);
 }
 
 .btn.selected, .btn:active, [open]>.btn{
@@ -113,10 +128,12 @@ border-bottom: #0e0d1b !important;
 
 .btn.selected, .btn:active, .btn:hover{
   background-image: linear-gradient(-180deg,#605a96,#4e4895 90%);
+  border-color: #605a96;
+  transition: 0.56s;
 
 }
 .btn-primary{
-  background-image:linear-gradient(-180deg,#34d058,#28a745 90%) !important;
+  background-image:linear-gradient(-180deg,#27253e,#1b1a2b 90%) !important;
   box-shadow: none;
   border: none;
 }
@@ -296,4 +313,184 @@ border: none;
 .p-4, .summary-stats{
   border:none !important;
   background-color: #0e0d1b;
+}
+
+.user-profile-nav{
+  background-color: rgb(56, 54, 78);
+  border:none;
+  -webkit-box-shadow: -2px 18px 37px -23px rgba(20, 20, 20, 1);
+  -moz-box-shadow: -2px 18px 37px -23px rgba(20, 20, 20, 1);
+  box-shadow: -2px 18px 37px -23px rgba(20, 20, 20, 1);
+}
+
+.UnderlineNav-item.selected{
+  color: rgb(116, 221, 226) !important;
+  text-shadow: 0 0 3vw #80c6ff;
+  border-bottom-color:rgb(116, 221, 226) !important;
+}
+
+.UnderlineNav-item{
+  color: rgb(160, 133, 249) !important;
+  border-bottom-color: rgb(160, 133, 249) !important;
+}
+
+.UnderlineNav-item:focus, .UnderlineNav-item:hover{
+  color: rgb(184, 133, 249) !important;
+    border-bottom-color:#b885f9 !important;
+    transition: 0.67s;
+    text-shadow: 0 0 3vw #cf80ff;
+
+}
+
+.Box{
+  background-color: rgb(56, 54, 78);
+  -webkit-box-shadow: -2px 18px 37px -23px rgba(20, 20, 20, 1);
+  -moz-box-shadow: -2px 18px 37px -23px rgba(20, 20, 20, 1);
+  box-shadow: -2px 18px 37px -23px rgba(20, 20, 20, 1);
+  border:none;
+}
+/*
+.calendar-graph rect[fill="#ebedf0"], .contrib-legend li[style*="#ebedf0"]{
+    background-color:#272b41 !important;
+    fill: #272b41!important;
+}
+
+.calendar-graph rect[fill="#c6e48b"], .calendar-graph rect[fill="#7bc96f"], .calendar-graph rect[fill="#239a3b"], .calendar-graph rect[fill="#196127"], .heat, .contrib-legend li{
+background-color: purple !important;
+fill: purple !important;
+}
+
+rect[fill="#7bc96f"], ul.legend li:nth-child(3){
+
+}
+
+rect[fill="#239a3b"], ul.legend li:nth-child(4){
+
+}
+
+rect[fill="#196127"], ul.legend li:nth-child(5){
+
+} */
+
+
+
+/* contribution calendar and blame heats */
+
+.calendar-graph rect[fill="#c6e48b"],
+.calendar-graph rect[fill="#7bc96f"],
+.calendar-graph rect[fill="#239a3b"],
+.calendar-graph rect[fill="#196127"],
+.heat,
+.contrib-legend li {
+    background-color: #d647fa !important;
+    fill: #d647fa !important;
+    -webkit-box-shadow: -16px 21px 101px -23px rgba(20, 20, 20, 1);
+    -moz-box-shadow: -16px 21px 101px -23px rgba(20, 20, 20, 1);
+    box-shadow: -16px 21px 101px -23px rgba(20, 20, 20, 1);
+  }
+
+.calendar-graph .days-selected rect.day.active {
+    stroke: red !important;
+}
+
+.calendar-graph rect.day:hover {
+    stroke: rgb(160, 145, 215) !important;
+    transition: 2s !important;
+
+
+}
+
+
+/* contribution calendar - regular colors */
+
+.calendar-graph rect[fill="#ebedf0"],
+.contrib-legend li[style*="#ebedf0"] {
+    background-color: rgb(54, 57, 93) !important;
+    fill: rgb(54, 57, 93) !important;
+}
+
+.heat[data-heat="1"],
+.heat[data-heat="2"],
+.calendar-graph rect[fill="#c6e48b"],
+.contrib-legend li[style*="#c6e48b"] {
+    opacity: .25 !important;
+}
+
+.heat[data-heat="3"],
+.heat[data-heat="4"],
+.calendar-graph rect[fill="#7bc96f"],
+.contrib-legend li[style*="#7bc96f"] {
+    opacity: .5 !important;
+}
+
+.heat[data-heat="5"],
+.heat[data-heat="6"],
+.calendar-graph rect[fill="#239a3b"],
+.contrib-legend li[style*="#239a3b"] {
+    opacity: .75 !important;
+}
+
+.heat[data-heat="7"],
+.heat[data-heat="8"],
+.calendar-graph rect[fill="#196127"],
+.contrib-legend li[style*="#196127"] {
+    opacity: 1 !important;
+}
+
+.p-3{
+  display: none;
+}
+
+.border-gray-dark{
+  border: none;
+  border-color: rgb(88, 67, 112);
+  -webkit-box-shadow: 14px 28px 40px -24px rgba(28,28,28,1);
+  -moz-box-shadow: 14px 28px 40px -24px rgba(28,28,28,1);
+  box-shadow: 14px 28px 40px -24px rgba(28,28,28,1);
+}
+
+.p-2{
+  background-color:rgb(24, 23, 38);
+}
+
+
+.avatar-before-user-status{
+  border: none !important;
+    }
+.user-profile-sticky-bar:after{
+    background-color: rgb(56, 54, 78) !important;
+    border-color:  rgb(56, 54, 78) !important;
+}
+
+
+.jump-to-suggestions-results-container .navigation-focus .jump-to-suggestions-path, .jump-to-suggestions-results-container [aria-selected=true] .jump-to-suggestions-path{
+  background-color: rgb(41, 36, 70) !important;
+  color: rgb(150, 247, 240);
+}
+.jump-to-suggestions-results-container .navigation-item{
+  border:none;
+}
+.jump-to-suggestions-path{
+  color: #c98ffb;
+  text-shadow: 1px 1px 20px #784fe9;
+
+}
+.header-search-wrapper{
+  background-color: rgb(25, 17, 32);
+  color: rgb(186, 130, 241);
+}
+.jump-to-field-active{
+  background-color: rgb(25, 17, 32) !important;
+  color: rgb(186, 130, 241) !important;
+}
+
+.ajax-pagination-form .ajax-pagination-btn{
+  background-color:rgb(24, 23, 38);
+  border:none !important;
+
+}
+
+.profile-timeline-card-wrapper{
+  background-color:rgb(24, 23, 38);
+  border:none !important;
 }
