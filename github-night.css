@@ -1,15 +1,16 @@
 /*
 
-Fiz cada um dos menus básicos.
-Falta perfl.
-Falta consertar os degradês.
-Falta decidir a paleta de cores realmente.
-Falta deixar os links azuis, como no Givero.
+Terminar perfis
+Escolher melhor a paleta de cores
+Redefirnir paleta de cores
 
 */
 
 body{
   background-color: rgb(39, 43, 65);
+  background: -moz-linear-gradient(top,  #0e0d1b 0%, #322441 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #0e0d1b 0%,#322441 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #0e0d1b 0%,#322441 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   color: rgb(226, 217, 254) !important;
 }
 
@@ -43,7 +44,7 @@ a{
 
 
 .repohead.experiment-repo-nav{
-  background-color: rgb(56, 54, 78);
+  background-color:rgb(35, 29, 58);
   -webkit-box-shadow: -2px 18px 37px -23px rgba(20, 20, 20, 1);
   -moz-box-shadow: -2px 18px 37px -23px rgba(20, 20, 20, 1);
   box-shadow: -2px 18px 37px -23px rgba(20, 20, 20, 1);
@@ -78,6 +79,11 @@ color: rgb(198, 176, 253) !important
   color: rgb(180, 143, 247) !important;
 }
 
+.text-gray{
+  color: rgb(197, 179, 255) !important;
+
+}
+
 .text-gray-dark{
   color: rgb(197, 179, 255) !important;
 
@@ -93,14 +99,9 @@ color: rgb(198, 176, 253) !important
 
 .Box-body{
 background-color: #0e0d1b;
-background: -moz-linear-gradient(top,  #0e0d1b 0%, #0e0418 100%);
-background: linear-gradient(to bottom,  #0e0d1b 0%,#0e0418 100%);
 border-bottom: #0e0d1b !important;
 }
 
-.Box-body:last-of-type{
-  background-color: red;
-}
 
 .Box-header{
   background-color: #0e0d1b;
@@ -140,10 +141,10 @@ border-bottom: #0e0d1b !important;
 
 .dropdown-menu{
   background: #0e0d1b;
-  background: -moz-linear-gradient(top,  #0e0d1b 0%, #291b38#453754 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  #0e0d1b 0%,#291b38 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  #0e0d1b 0%,#291b38 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   border-bottom: #0e0d1b !important;
+  -webkit-box-shadow: 14px 28px 40px -24px rgba(0, 0, 0, 0.9);
+  -moz-box-shadow: 14px 28px 40px -24px rgba(0, 0, 0, 0.9);
+  box-shadow: 14px 28px 40px -24px rgba(0, 0, 0, 0.9);
 }
 
 .file-navigation .get-repo-btn{
@@ -195,7 +196,7 @@ border: none;
 }
 
 .select-menu-filters{
-  background: rgb(56, 54, 78);
+  background:rgb(35, 29, 58);
   color: rgb(95, 81, 245);
 
   border: none;
@@ -316,7 +317,7 @@ border: none;
 }
 
 .user-profile-nav{
-  background-color: rgb(56, 54, 78);
+  background-color:rgb(35, 29, 58);
   border:none;
   -webkit-box-shadow: -2px 18px 37px -23px rgba(20, 20, 20, 1);
   -moz-box-shadow: -2px 18px 37px -23px rgba(20, 20, 20, 1);
@@ -343,7 +344,7 @@ border: none;
 }
 
 .Box{
-  background-color: rgb(56, 54, 78);
+  background-color:rgb(35, 29, 58);
   -webkit-box-shadow: -2px 18px 37px -23px rgba(20, 20, 20, 1);
   -moz-box-shadow: -2px 18px 37px -23px rgba(20, 20, 20, 1);
   box-shadow: -2px 18px 37px -23px rgba(20, 20, 20, 1);
@@ -442,8 +443,8 @@ rect[fill="#196127"], ul.legend li:nth-child(5){
 }
 
 .border-gray-dark{
-  border: none;
-  border-color: rgb(88, 67, 112);
+  border: none !important;
+  /* border-color: rgb(88, 67, 112); */
   -webkit-box-shadow: 14px 28px 40px -24px rgba(28,28,28,1);
   -moz-box-shadow: 14px 28px 40px -24px rgba(28,28,28,1);
   box-shadow: 14px 28px 40px -24px rgba(28,28,28,1);
@@ -458,8 +459,8 @@ rect[fill="#196127"], ul.legend li:nth-child(5){
   border: none !important;
     }
 .user-profile-sticky-bar:after{
-    background-color: rgb(56, 54, 78) !important;
-    border-color:  rgb(56, 54, 78) !important;
+    background-color:rgb(35, 29, 58) !important;
+    border-color: rgb(35, 29, 58) !important;
 }
 
 
@@ -490,7 +491,61 @@ rect[fill="#196127"], ul.legend li:nth-child(5){
 
 }
 
-.profile-timeline-card-wrapper{
+.profile-timeline-card-wrapper, .p-2{
   background-color:rgb(24, 23, 38);
   border:none !important;
+}
+
+.bg-white{
+  background-color: rgb(39, 43, 65) !important;
+}
+
+.discussion-item-icon{
+  background-color: rgb(39, 43, 65) !important;
+  border: rgb(30, 34, 56) ;
+  -webkit-box-shadow: -2px 18px 37px -23px rgba(20, 20, 20, 1);
+  -moz-box-shadow: -2px 18px 37px -23px rgba(20, 20, 20, 1);
+  box-shadow: -2px 18px 37px -23px rgba(20, 20, 20, 1);
+}
+
+
+/*teste*/
+
+.py-4 {
+    padding-bottom: 24px!important;
+    padding-top: 24px!important;
+    color: black !important;
+    /* background-color: pink; */
+    border: none !important;
+    -webkit-box-shadow: 14px 28px 40px -24px rgba(28,28,28,1);
+    -moz-box-shadow: 14px 28px 40px -24px rgba(28,28,28,1);
+    box-shadow: 14px 28px 40px -24px rgba(28,28,28,1);
+    padding-right: 3%;
+
+
+}
+
+/* /teste */
+
+.muted-link {
+    color: #daebff!important;
+}
+.muted-link:hover{
+  color: #b2a5f1!important;
+}
+
+a {
+    color: #bd70ff;
+    text-decoration: none;
+    /* text-shadow: 2px 0 10px #80c6ff; */
+}
+
+.progress-bar{
+  background-color: rgb(101, 215, 165) !important;
+}
+
+.form-control, .form-select{
+  background-color: rgb(25, 17, 32);
+  color: rgb(186, 130, 241);
+  border: none !important;
 }
