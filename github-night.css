@@ -1,17 +1,24 @@
 /*
 
-Terminar perfis
-Escolher melhor a paleta de cores
-Redefirnir paleta de cores
+Fiz cada um dos menus básicos.
+Falta perfl.
+Falta consertar os degradês.
+Falta decidir a paleta de cores realmente.
+Falta deixar os links azuis, como no Givero.
 
 */
 
-body{
+body, .bg-gray{
   background-color: rgb(39, 43, 65);
   background: -moz-linear-gradient(top,  #0e0d1b 0%, #322441 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top,  #0e0d1b 0%,#322441 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom,  #0e0d1b 0%,#322441 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   color: rgb(226, 217, 254) !important;
+}
+
+
+.border-bottom{
+    border-color: rgb(39, 43, 65) !important;
 }
 
 .Header-link{
@@ -548,4 +555,14 @@ a {
   background-color: rgb(25, 17, 32);
   color: rgb(186, 130, 241);
   border: none !important;
+}
+
+
+.filter-item.selected{
+  background-color: #312340;
+}
+
+
+.dropdown-item.zeroclipboard-is-hover, .dropdown-item:focus, .dropdown-item:hover{
+  background-color: #312340;
 }
