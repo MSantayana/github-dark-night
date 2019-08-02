@@ -1,13 +1,3 @@
-/*
-
-Fiz cada um dos menus básicos.
-Falta perfl.
-Falta consertar os degradês.
-Falta decidir a paleta de cores realmente.
-Falta deixar os links azuis, como no Givero.
-
-*/
-
 body, .bg-gray{
   background-color: rgb(39, 43, 65);
   background: -moz-linear-gradient(top,  #0e0d1b 0%, #322441 100%); /* FF3.6-15 */
