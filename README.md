@@ -10,6 +10,9 @@
 
 # Installation
 To use this style, you'll need an extension to change the CSS, for this I recomend [Stylus](https://github.com/stylus/stylus).
-Stylus is avaliable for: [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne/), [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Opera](https://addons.opera.com/en/extensions/details/stylus/).
+
+
+
+Stylus is avaliable for: [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne/), [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/) and [Opera](https://addons.opera.com/en/extensions/details/stylus/).
 
 
